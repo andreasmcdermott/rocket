@@ -85,7 +85,7 @@ class GameScene extends Scene
 		if (backgroundCloser.x < -Game.Width)
 			backgroundCloser.x += Game.Width;
 			
-		if ((!playing || paused) && title == null && Input.isKeyPressed(Keyboard.UP) || Input.isLeftMouseButtonPressed())
+		if ((!playing || paused) && title == null && (Input.isKeyPressed(Keyboard.UP) || Input.isLeftMouseButtonPressed()))
 		{
 			rocket.alive();
 			playing = true;		
